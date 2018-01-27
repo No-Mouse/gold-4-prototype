@@ -9,7 +9,7 @@
 function GameBoard(game) {
     Entity.call(this, game, 20, 20);
 	this.score = 0;
-	this.money = 100;
+	this.money = 1000;
     this.grid = false;
     this.canBuy = true;
     this.player = 0;
@@ -211,7 +211,7 @@ function attackDude(game, spritesheet) {
     Entity.call(this, game, 0, 0);
 	this.animation = new Animation(spritesheet, 536, 495, 10, 0.10, 10, true, 0.2);
 	this.x = 5;
-    this.y = 5;
+    this.y = 400;
     this.speed = 100;
     this.game = game;
     this.ctx = game.ctx;
